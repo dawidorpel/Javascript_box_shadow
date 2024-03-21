@@ -3,84 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow Generator</title>
     <link rel="stylesheet" href="style.css">
-    <title>Javascript_box_shadow</title>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
 </head>
 <body>
     <section class="container">
-        <div class="result">
-            <div id="preview"></div>
-        </div>
-        <div class="settings">
-            <div class="range-wrapper">
-                <label for="x-shadow">Horizontal Shadow :</label>
-                <input type="range"  id="x-shadow" min="-100" max="100" value="-6">
-            </div>
-            <div class="range-wrapper">
-                <label for="blur-r">Blur Radius :</label>
-                <input type="range"  id="y-shadow" min="-100" max="100" value="15">
-            </div>
-            <div class="range-wrapper">
-                <label for="speard-r">Speard Shadow :</label>
-                <input type="range"  id="speard-r" min="-50" max="50" value="6">
-            </div>
-            <div class="range-wrapper">
-                <label for="border-r">Border Radius :</label>
-                <input type="range"  id="border-r" min="0" max="100" step="1" value="70">
-            </div>
-            <div class="range-wrapper">
-                <label for="shadow-opacity">Shadow Opacity :</label>
-                <input type="range"  id="shadow-opacity" min="0" max="1" step="0.1" value="0.5">
-            </div>
-            
-            <div class="input-wrapper">
-                <label for="inset-shadow">Inset Shadow :</label>
-                <input type="checkbox" id="inset-shadow">
-            </div>
-            <div id="color-wrapper">
-                <label for="shadow-color">Shadow Color</label>
-                <input type="color" name="shadow-color" id="">
-            </div>
-        </div>
+        <aside class="result">
+            <div id="preview">
 
+            </div>
+        </aside>
+            <div class="settings">
+                <div class="range-wrapper">
+                    <label for="x-shadow">Horizontal Shadow: </label>
+                    <input type="range" id="x-shadow" min="-100" max="100" value="-6">
+                </div>
+                <div class="range-wrapper">
+                    <label for="y-shadow">Vertical Shadow: </label>
+                    <input type="range" id="y-shadow" min="-100" max="100" value="15">
+                </div>
+                <div class="range-wrapper">
+                    <label for="blur-r">Blur Radius: </label>
+                    <input type="range" id="blur-r" min="0" max="100" value="30">
+                </div>
+                <div class="range-wrapper">
+                    <label for="spread-r">Spread Radius: </label>
+                    <input type="range" id="spread-r" min="-50" max="50" value="6">
+                </div>
+                <div class="range-wrapper">
+                    <label for="border-r">Border Radius: </label>
+                    <input type="range" id="border-r" min="0" max="100" step="1" value="70">
+                </div>
+                <div class="range-wrapper">
+                    <label for="shadow-opacity">Shadow Opacity: </label>
+                    <input type="range" id="shadow-opacity" min="0" max="1" step="0.1" value="0.5">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="inset-shadow">Inset Shadow: </label>
+                    <input type="checkbox" id="inset-shadow">
+                </div>
+
+                <div id="color-wrapper">
+                    <label for="shadow-color">Shadow Color: </label>
+                    <input type="color" id="shadow-color">
+                </div>
+            </div>
         <div class="code-container">
-            <textarea id="style"  rows="2"></textarea>
-            <button id="copy-style" onclick="copyStyles()">Copy Styles</button>
+            <textarea id="styles" rows="2"></textarea>
+            <button id="copy-styles" onclick="copyStyles()">Copy Styles</button>
         </div>
-
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="script.js"></script>
 </body>

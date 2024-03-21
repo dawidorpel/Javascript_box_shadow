@@ -81,8 +81,13 @@ textarea{
     border: 1px solid #000;
     border-radius: 5px;
 }
-
 .input-wrapper{
+    display: flex;
+    align-items: center;
+    gap : 5px;
+}
+
+#color-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -94,4 +99,5 @@ input[type="color"]{
     width: 25px;
     height: 25px;
     border: 1px solid #ccc;
+    cursor: pointer;
 }
