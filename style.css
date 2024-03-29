@@ -13,7 +13,9 @@ body{
 label{
     font-size: 14px;
 }
-
+.container .settings label {
+    user-select: none;
+}
 .container{
     background-color: #fff;
     position: absolute;
@@ -39,11 +41,6 @@ label{
     box-shadow: -6px 15px 30px 6px rgb(0, 0, 0, 0.5);
 }
 
-.settings{
-    display: grid;
-    grid-template-columns: 6fr 6fr;
-    gap: 15px 25px;
-}
 
 .range-wrapper, #color-wrapper{
     display: flex;
@@ -100,4 +97,83 @@ input[type="color"]{
     height: 25px;
     border: 1px solid #ccc;
     cursor: pointer;
+}
+.container
+{
+    background-color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 25%;
+    padding: 30px;
+    width: 80vmin;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(2, 42, 83, 0.2);
+}
+.container2
+{
+    background-color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 75%;
+    padding: 30px;
+    width: 80vmin;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(2, 42, 83, 0.2);
+}
+
+.result2
+{
+    padding: 20px 0 120px;
+    color: #311b92;
+}
+#preview2
+{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    text-shadow: -6px 15px 30px rgba(0, 0, 0, 0.5);
+}
+#preview2 h1
+{
+    font-size: 80px;
+}
+.settings, .settings2
+{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 15px 25px;
+}
+#range-wrapper, #color-wrapper, #range-wrapper2, #color-wrapper2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.code-container, .code-container2
+{
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+.code-container button, .code-container2 button
+{
+    background-color: #311b92;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: #fff
+}
+#color-wrapper, #color-wrapper2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
 }
